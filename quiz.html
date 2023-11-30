@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Keroplanta</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/quiz.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:wght@400;700&family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+      <ul class="nav-bar">
+        <li class="nav-item"><a href="#">Início</a></li>
+      </ul>
+    </nav>
+    <div class="bemvindo">
+      <img class="header-imagem" src="img/header.png" alt="imagemm do header" />
+      <div class="iniciar-teste" onclick="comecarTeste()">Iniciar</div>
+    </div>
+
+    <div class="container">
+      <div class="container-questao">
+        <div id="contagem-perguntas">Questão <span id="contagem"></span>/5</div>
+        <div id="Questão"></div>
+        <div class="ans" id="div-pergunta-a" onclick="questaoSelecionada(0)">
+          <span class="container-escolha">I</span><span id="pergunta-a"></span>
+        </div>
+        <div class="ans" id="div-pergunta-b" onclick="questaoSelecionada(1)">
+          <span class="container-escolha">II</span><span id="pergunta-b"></span>
+        </div>
+        <div class="ans" id="div-pergunta-c" onclick="questaoSelecionada(2)">
+          <span class="container-escolha">III</span><span id="pergunta-c"></span>
+        </div>
+        <div class="ans" id="div-pergunta-d" onclick="questaoSelecionada(3)">
+          <span class="container-escolha">IV</span><span id="pergunta-d"></span>
+        </div>
+        <div class="botao">
+          <div id="anterior" onclick="questaoAnterior()">< Anterior</div>
+          <div id="proxima" onclick="questaoProxima()">Proxima></div>
+          <div id="recomecar" onclick="questaoRecomecar()">Recomeçar</div>
+        </div>
+
+        <div id="resultado-teste">
+          <img src="img/suculenta.png" id="imagem" />
+          <div id="trait">
+            <strong id="titulo-teste"></strong> <br />
+            <p id="descricao-teste"></p>
+            <div>Algumas dessas plantas características:</div>
+            <ul id="plantas"></ul>
+          </div>
+          <div class="w-100">
+            <form id="menu-comentario" class="rounded-2 bg-white p-5 w-100">
+              <h3 class="text-center mb-4"> Faça seu comentário!</h3>
+              <div class="mb-3">
+                <label for="inputName" class="form-label">Digite seu nome:</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Seu nome" required>
+              </div>
+              <div class="mb-3">
+                <label for="inputText" class="form-label">No que está pensando?</label>
+                <textarea class="form-control" id="inputText" placeholder="Comente algo..." required></textarea>
+              </div>
+              <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-success px-4">Comentar</button>
+              </div>
+            </form>
+           </div>
+
+           <div class="w-100">
+            <div class="rounded-2 bg-white p-5 w-100" id="commentPost">
+              <h5 class="text-center mb-3">Comentários</h5>
+            </div>
+           </div>
+        </div>
+      </div>
+      <div class="suas-escolhas">
+        <div class="title">Suas escolhas:</div>
+        <div id="pergunta"></div>
+      </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/perguntas.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/comentario.js"></script>
+  </body>
+</html> 

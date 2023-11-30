@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keroplanta</title>
+    <link rel="stylesheet" href="./css/cadastro.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:wght@400;700&family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6664f726cf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-cadastro">
+        <div class="cadastro-tela">
+
+            <h1 id="titulo" class="cadastro-titulo">Cadastrar</h1>
+            <form id="cadastro" class="cadastro">
+                
+                <div class="caixa-grupo">
+                    <div class="caixa-campo" id="nomeCampo">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="nome" placeholder="Nome">
+                    </div>
+                    <span id="nome_error"> Nome é obrigatório.</span>
+
+                    <div class="caixa-campo">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="email" placeholder="E-mail">
+                    </div>
+                    <span id="email_error"> E-mail válido é obrigatório.</span>
+
+                    <div class="caixa-campo">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="senha" placeholder="Senha">
+                    </div>
+                    <span id="senha_error">A senha deve ter pelo menos 6 caracteres.</span>
+
+                    <div class="campo-clique">
+                    <p id="jaConta"> Já tem uma conta?</p>
+                    <button type="button" id="entrarBotao">Clique aqui!</button>
+                    <button type="button" id="cadastrarBotao">Clique aqui!</button>
+                    </div>
+
+                    </div>
+                    
+                <div class="botao-campo">
+                   <button id="entrarCadastrar" type="button">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./js/cadastro.js"></script>
+    <script src="./js/logar.js"></script>
+</body>
+</html>

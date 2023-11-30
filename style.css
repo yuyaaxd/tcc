@@ -1,0 +1,19 @@
+@import url("css/cadastro.css");
+@import url("css/quiz.css");
+
+:root {
+    --verde: rgb(137, 255, 153);
+    --laranja: rgb(197, 122, 24);
+    --branco: #FFFFFF;
+    --fonte-principal: 'Poppins';
+    --preto: rgb(0, 0, 0);
+    --cinza: rgb(219, 219, 219);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--fonte-principal);
+    background-image: url(/img/background.jpg);
+    background-size: cover;
+}
